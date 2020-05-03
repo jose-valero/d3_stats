@@ -1,7 +1,9 @@
 <template>
   <div>
     <BaseLoading v-if="isLoading" />
-    <h1>Profile View</h1>
+    <template v-if="profileData !== null">
+      <MainBlock :profile-data="profileData" />
+    </template>
   </div>
 </template>
 
@@ -11,11 +13,13 @@
 import BaseLoading from '@/components/BaseLoading'
 import setError from '@/mixins/setError'
 import { getApiAccount } from '@/api/search'
+import MainBlock from './MainBlock/Index'
 
 export default {
   name: 'ProfileView',
   components: {
-    BaseLoading
+    BaseLoading,
+    MainBlock
   },
   mixins: [setError],
   data() {
@@ -56,3 +60,37 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .grid-item {
+    &.item-left {
+      grid-column: span 1;
+    }
+
+    &.item-right {
+      grid-column: span 1;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    .grid-item {
+      &.item-left {
+        grid-column: span 4;
+      }
+
+      &.item-right {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+</style>
