@@ -22,7 +22,6 @@ export default {
     BaseLoading
   },
   computed: {
-    // Uso: mapState(moduleName, { state })
     ...mapState('loading', {
       isLoading: 'isLoading'
     })
