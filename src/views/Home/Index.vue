@@ -1,12 +1,21 @@
 <template>
-  <div class="home">
-    <h1>Home Page</h1>
+  <div class="home-view">
+    <HomeTitle />
+
+    <MainForm />
   </div>
 </template>
 
 <script>
+/* eslint-disable */
+import HomeTitle from './HomeTitle'
+import MainForm from './HomeForm'
 
 export default {
-  name: 'Home'
+  name: 'HomeView',
+  components: {
+    HomeTitle,
+    MainForm
+  }
 }
 </script>
