@@ -16,6 +16,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import MadeByFoot from './MadeByFoot'
 import PoweredByFoot from './PoweredByFoot'
 import FootLinks from './FootLinks'
@@ -23,7 +24,7 @@ import FootLinks from './FootLinks'
 export default {
   name: 'FooterBar',
   components: { FootLinks, PoweredByFoot, MadeByFoot },
-  data () {
+  data() {
     return {
       icons: [
         {
