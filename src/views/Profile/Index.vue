@@ -40,7 +40,6 @@ export default {
           this.profileData = data
         })
         .catch(err => {
-          console.error('error message:')
           this.profileData = null
           const errObj = {
             routeParams: this.$$route.params,
