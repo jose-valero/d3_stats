@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-portrait-wrapper mb-5 mb-sm-0">
+  <div class="hero-portrait-wrapper mb-5 mb-sm-0 hover-cursor-pointer" @click="goToHero(hero.id)">
     <div class="bg-secondary d-flex justify-content-center p-3 p-sm-0">
       <div :class="heroClass"></div>
     </div>
@@ -26,13 +26,13 @@
 
 <script>
 /* eslint-disable */
+import goToHero from '@/mixins/goToHero'
 import { formatNumber } from '@/filters/numeral'
 
 export default {
   name: 'TopHero',
-  filters: {
-    formatNumber
-  },
+  mixins: [goToHero],
+  filters: { formatNumber },
   props: {
     hero: {
       type: Object,

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-ico d-flex align-items-center">
+  <div class="hero-ico d-flex align-items-center hover-cursor-pointer" @click="goToHero(hero.id)">
     <span class="hero-image border" :class="heroClassImg" />
     <span
       class="hero-name ml-2 font-weight-bold"
@@ -17,8 +17,11 @@
 
 <script>
 /* eslint-disable */
+import goToHero from '@/mixins/goToHero'
+
 export default {
   name: 'HeroIco',
+  mixins: [goToHero],
   props: {
     hero: {
       required: true,
