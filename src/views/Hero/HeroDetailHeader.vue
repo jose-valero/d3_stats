@@ -1,7 +1,6 @@
 <template>
   <b-row class="hero-detail-header my-5">
     <b-col cols="12">
-      <!-- Avatar -->
       <div class="d-flex justify-content-center mb-3">
         <div class="hero-detail-avatar" :class="heroClass"></div>
       </div>

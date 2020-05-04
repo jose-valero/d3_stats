@@ -1,6 +1,6 @@
 <template>
   <div class="active-skills">
-    <h4 class="my-5">Active</h4>
+    <h4 class="my-5 font-diablo">ACTIVE</h4>
 
     <div class="skills">
       <b-row>

@@ -51,10 +51,8 @@ export default {
   },
   computed: {
     detailHeader() {
-      // Asignamos valores a través de
       const {
         name,
-        // valor: alias
         class: classSlug,
         gender,
         level,
@@ -78,7 +76,6 @@ export default {
       }
     },
     detailStats() {
-      // Devuelve el contenido de stats y agrega classSlug
       return { ...this.hero.stats, classSlug: this.hero.class }
     }
   },
