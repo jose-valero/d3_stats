@@ -6,6 +6,9 @@ import './plugins/bootstrapVue'
 // Vue Font-Awesome
 import './plugins/fontAwesome'
 
+// Custom directives
+import './directives'
+
 // Archivos locales de nuestra App
 import App from './App.vue'
 import router from './router'
