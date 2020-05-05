@@ -1,7 +1,7 @@
 import { post } from 'axios'
 
-const clientId = '03d57f4120fc426883fc92c13b452089'
-const clientSecret = 'PxhnJu6V1jfhUT11rw8M04PaXX2jUymc'
+const clientId = process.env.VUE_APP_CLIENT_ID
+const clientSecret = process.env.VUE_APP_CLIENT_SECRET
 
 const region = 'eu'
 const API_URL = `https://${region}.battle.net/oauth/token`
@@ -14,7 +14,7 @@ function getToken () {
     headers: { 'Content-type': 'multipart/form-data' },
     auth: { username: clientId, password: clientSecret }
   }
-  return post(API_URL, body, config)
+  return post(`${API_URL}`, body, config)
 }
 
 export { getToken }

@@ -5,7 +5,7 @@ export default {
     error: null
   },
   mutations: {
-    SET_ERROR(state, payload) {
+    SET_ERROR (state, payload) {
       state.error = payload
     }
   }

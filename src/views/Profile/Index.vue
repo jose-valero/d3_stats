@@ -1,30 +1,34 @@
 <template>
-  <div>
-    <BaseLoading v-if="isLoading" />
-    <template v-if="profileData !== null">
-      <MainBlock :profile-data="profileData" />
-      <ArtisansBlock :artisans-data="artisansData" />
-    </template>
+  <div class="profile-view">
+    <div class="profile-body">
+      <BaseLoading v-if="isLoading" />
+
+      <template v-if="profileData !== null">
+        <MainBlock :profile-data="profileData" />
+        <ArtisansBlock :artisans-data="artisansData" />
+      </template>
+    </div>
   </div>
 </template>
 
 <script>
 /* eslint-disable */
 
-import BaseLoading from '@/components/BaseLoading'
 import setError from '@/mixins/setError'
 import { getApiAccount } from '@/api/search'
+
+import BaseLoading from '@/components/BaseLoading'
 import MainBlock from './MainBlock/Index'
 import ArtisansBlock from './ArtisansBlock/Index'
 
 export default {
   name: 'ProfileView',
+  mixins: [setError],
   components: {
     BaseLoading,
     ArtisansBlock,
     MainBlock
   },
-  mixins: [setError],
   data() {
     return {
       isLoading: false,
@@ -49,7 +53,13 @@ export default {
     this.fetchData(region, account)
   },
   methods: {
+    /**
+     * Fetch data
+     * @param region {String}
+     * @param account {String}
+     */
     fetchData(region, account) {
+      // Fetch Data
       getApiAccount({ region, account })
         .then(({ data }) => {
           this.profileData = data
@@ -57,7 +67,7 @@ export default {
         .catch(err => {
           this.profileData = null
           const errObj = {
-            routeParams: this.$$route.params,
+            routeParams: this.$route.params,
             message: err.message
           }
           if (err.response) {
@@ -65,7 +75,7 @@ export default {
             errObj.status = err.response.status
           }
           this.setApiErr(errObj)
-          this.$route.push({ name: 'Error' })
+          this.$router.push({ name: 'Error' })
         })
         .finally(() => {
           this.isLoading = false

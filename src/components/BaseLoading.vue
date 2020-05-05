@@ -1,7 +1,6 @@
 <template>
   <div class="loading-wrapper text-center py-5">
     <div class="spinner-wrapper w-100">
-      <!--Componente Spinner de Bootstrap 🔄-->
       <b-spinner class="spinner" label="Loading..." :type="type" :variant="variant" />
     </div>
     <h1 class="my-5">Loading...</h1>
@@ -9,6 +8,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   name: 'Loading',
   props: {

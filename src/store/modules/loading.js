@@ -5,7 +5,7 @@ export default {
     isLoading: false
   },
   mutations: {
-    SET_LOADING(state, payload) {
+    SET_LOADING (state, payload) {
       state.isLoading = payload
     }
   }

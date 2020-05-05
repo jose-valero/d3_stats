@@ -7,6 +7,7 @@
     <MainLayout v-else />
   </div>
 </template>
+
 <script>
 import { mapState } from 'vuex'
 
