@@ -1,10 +1,10 @@
 ## Curso Avanzado de Vue.js en Platzi
 
-####Demo de la APP 🏆: [Valero-Diablo3](http:// https://valero-diablo3.netlify.app/#/ "Valero-Diablo3")
-#####battleTag: SuperRambo#2613
-#####Region: EU
+#### Demo de la APP 🏆: [Valero-Diablo3](http:// https://valero-diablo3.netlify.app/#/ "Valero-Diablo3")
+##### battleTag: SuperRambo#2613
+##### Region: EU
 
-###Diablo III Profile finder 👹
+###-Diablo III Profile finder 👹
 
 #### Start Up 🚀
 Aplicacion de Vuejs bajo concepto de un buscador perfiles de Diablo 3, esta app nos permite buscar ciertos aspectos y carascteristicas del jugadores, sus top heroes asi como los skills y los items.
@@ -25,7 +25,7 @@ tecnologias usadas⌨️:
 
  `JavaScript`  `HTML5`  `CSS3`  `Bootstrap-Vue` `Nodejs` `Vuejs` `Netlify`  `FontAwesome`
  
----
+
 #### Ejemplo de Componentes Asincronos 🧩
 el uso de /* webpackChunkName: "ActiveSkills */ nos facilita identificar los chucks y aplicamos el concepto de "lazy loading" 😮
 
@@ -78,31 +78,31 @@ Vue.directive('diablo', diablo) // font v-diablo
 
 ---
 #### SETUP 📋
----
-#####Install
+
+##### Install
     npm install
 ---
-#####Install Vuejs
+##### Install Vuejs
     npm install -g @vue/cli
 ---
-#####Compiles and hot-reloads for development
+##### Compiles and hot-reloads for development
     npm run serve
 ---
-#####Compiles and minifies for production
+##### Compiles and minifies for production
     npm run build
 ---
-#####Run your unit tests
+##### Run your unit tests
     npm run test:unit
 ---
-#####Run your end-to-end tests
+##### Run your end-to-end tests
     npm run test:e2e
 ---
-#####Lints and fixes files
+##### Lints and fixes files
     npm run lint --fix
 ---
 
-###Autores:
+### Autores:
 
-#####[Alumno: Jose Valero](https://www.linkedin.com/in/josemiguelvalero/ "Jose Valero") 👨‍🎓
-#####[Profesor: Jorge Baumann](https://github.com/baumannzone "Jorge Baumann") 👨‍🏫
+##### [Alumno: Jose Valero](https://www.linkedin.com/in/josemiguelvalero/ "Jose Valero") 👨‍🎓
+##### [Profesor: Jorge Baumann](https://github.com/baumannzone "Jorge Baumann") 👨‍🏫
 ---
