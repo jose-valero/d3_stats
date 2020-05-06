@@ -29,7 +29,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { HeroData } from '@/utils/typeValidation'
 import heroName from '@/mixins/heroName'
 import SingleStat from './SingleStat'
@@ -49,7 +48,7 @@ export default {
     }
   },
   computed: {
-    timePlayed() {
+    timePlayed () {
       return Object.keys(this.stats.timePlayed)
         .sort()
         .map(hero => {

@@ -11,7 +11,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import ArtisanItem from './ArtisanItem'
 
 export default {
@@ -24,7 +23,7 @@ export default {
     }
   },
   computed: {
-    artisansInfo() {
+    artisansInfo () {
       return [
         {
           name: 'blacksmith',
@@ -55,4 +54,3 @@ export default {
   }
 }
 </script>
- 

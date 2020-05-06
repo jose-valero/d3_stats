@@ -74,7 +74,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import ItemDetail from './ItemDetail'
 
 // Objeto con las keys de los 'items' del personaje
@@ -130,7 +129,7 @@ export default {
     }
   },
   computed: {
-    itemsData() {
+    itemsData () {
       // Fusionar objetos:
       // Esto lo hacemos para mostrar el hueco vacío en caso de que ese objeto no esté equipado
       // Si NO hay item equipado, manda el valor de 'defaultItems' correspondiente

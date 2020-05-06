@@ -34,7 +34,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { mapState } from 'vuex'
 import setError from '@/mixins/setError'
 
@@ -46,7 +45,7 @@ export default {
       err: 'error'
     })
   },
-  beforeRouteLeave(to, from, next) {
+  beforeRouteLeave (to, from, next) {
     // called when the route that renders this component is about to be navigated away from.
     this.setApiErr(null)
     next()

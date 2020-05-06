@@ -1,4 +1,3 @@
-/* eslint-disable */
 import numeral from 'numeral'
 
 const formatNumber = num => {

@@ -7,7 +7,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import HomeTitle from './HomeTitle'
 import MainForm from './HomeForm'
 

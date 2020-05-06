@@ -1,4 +1,3 @@
-/* eslint-disable */
 import classes from '../utils/heroClasses'
 
 export default {

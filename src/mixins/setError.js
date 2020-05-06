@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { mapMutations } from 'vuex'
 
 export default {
@@ -10,7 +9,7 @@ export default {
      * API response error.
      * @param params {Object || null} Error Object
      */
-    setApiErr(params) {
+    setApiErr (params) {
       this.setError(params)
     }
   }

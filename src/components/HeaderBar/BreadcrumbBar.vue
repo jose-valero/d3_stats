@@ -5,19 +5,18 @@
 </template>
 
 <script>
-/* eslint-disable */
 const home = { text: 'Home', to: { name: 'Home' } }
 
 export default {
   name: 'BreadcrumbBar',
-  data() {
+  data () {
     return {
       items: []
     }
   },
   computed: {
     // Show breadcrumbs according to Router MetaParams
-    showComponent() {
+    showComponent () {
       return this.$route.meta.showBreadcrumb
     }
   },
@@ -25,16 +24,16 @@ export default {
     /**
      * Update breadcrumbs items when route changes
      */
-    $route() {
+    $route () {
       this.items = []
       this.updateBreadcrumbs()
     }
   },
-  created() {
+  created () {
     this.updateBreadcrumbs()
   },
   methods: {
-    updateBreadcrumbs() {
+    updateBreadcrumbs () {
       switch (this.$route.name) {
         case 'Profile':
           this.profileCase()
@@ -46,10 +45,10 @@ export default {
           this.homeCase()
       }
     },
-    homeCase() {
+    homeCase () {
       this.items.push(home)
     },
-    profileCase() {
+    profileCase () {
       this.homeCase()
       const { battleTag, region } = this.$route.params
       this.items.push({
@@ -57,7 +56,7 @@ export default {
         to: { name: 'Profile', params: { region, battleTag } }
       })
     },
-    heroCase() {
+    heroCase () {
       this.profileCase()
       const { battleTag, region, heroId } = this.$route.params
       this.items.push({
@@ -71,4 +70,3 @@ export default {
   }
 }
 </script>
-

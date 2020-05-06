@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { get } from 'axios'
 import store from '../store/index'
 
@@ -12,8 +11,8 @@ const host = '.api.blizzard.com/'
  * @param region {String}
  * @returns {Promise}
  */
-function listSeasons(region) {
-  const resource = `data/d3/season/`
+function listSeasons (region) {
+  const resource = 'data/d3/season/'
   const API_URL = `${protocol}${region}${host}${resource}`
 
   const params = {

@@ -11,7 +11,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import TimePlayedHero from './TimePlayedHero'
 
 export default {

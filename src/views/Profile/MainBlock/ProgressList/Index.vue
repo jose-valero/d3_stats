@@ -12,7 +12,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import ProgressItem from './ProgressItem'
 
 export default {
@@ -25,7 +24,7 @@ export default {
     }
   },
   computed: {
-    sortedActs() {
+    sortedActs () {
       return Object.keys(this.acts)
         .sort()
         .reduce((a, c) => {

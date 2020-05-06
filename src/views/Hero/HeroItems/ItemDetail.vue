@@ -40,12 +40,11 @@
 </template>
 
 <script>
-/* eslint-disable */
 import ItemDetailGem from './ItemDetailGem'
 
 export default {
   name: 'ItemDetail',
-   components: { ItemDetailGem },
+  components: { ItemDetailGem },
   props: {
     item: {
       type: Object || undefined,
@@ -54,21 +53,21 @@ export default {
   },
   computed: {
     // Resuelve la URL de la imagen
-    itemUrl() {
+    itemUrl () {
       const host = 'http://media.blizzard.com/d3/icons/items/large/'
       return `${host}${this.item.icon}.png`
     },
     // Comprueba si el item tiene gemas
-    itemHasGems() {
+    itemHasGems () {
       return Object.prototype.hasOwnProperty.call(this.item, 'gems')
     },
     // Si tiene gemas, comprueba si es Gema o Joya
     // Puede haber varias Gemas. Solo puede haber una Joya. No puede haber joyas y gemas mezcladas
-    gemOrJewel() {
+    gemOrJewel () {
       return this.item.gems[0].isGem ? 'Gems' : 'Jewel'
     },
     // Clase CSS para saber la rareza
-    itemClassColor() {
+    itemClassColor () {
       if (Object.prototype.hasOwnProperty.call(this.item, 'displayColor')) {
         return `item-${this.item.displayColor}`
       }

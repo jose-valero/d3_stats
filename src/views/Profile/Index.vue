@@ -12,8 +12,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 import setError from '@/mixins/setError'
 import { getApiAccount } from '@/api/search'
 
@@ -29,14 +27,14 @@ export default {
     ArtisansBlock,
     MainBlock
   },
-  data() {
+  data () {
     return {
       isLoading: false,
       profileData: null
     }
   },
   computed: {
-    artisansData() {
+    artisansData () {
       return {
         blacksmith: this.profileData.blacksmith,
         blacksmithHardcore: this.profileData.blacksmithHardcore,
@@ -47,7 +45,7 @@ export default {
       }
     }
   },
-  created() {
+  created () {
     this.isLoading = true
     const { region, battleTag: account } = this.$route.params
     this.fetchData(region, account)
@@ -58,7 +56,7 @@ export default {
      * @param region {String}
      * @param account {String}
      */
-    fetchData(region, account) {
+    fetchData (region, account) {
       // Fetch Data
       getApiAccount({ region, account })
         .then(({ data }) => {

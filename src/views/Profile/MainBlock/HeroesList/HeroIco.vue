@@ -16,7 +16,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import goToHero from '@/mixins/goToHero'
 
 export default {
@@ -29,7 +28,7 @@ export default {
     }
   },
   computed: {
-    heroClassImg() {
+    heroClassImg () {
       const gender = this.hero.gender === 1 ? 'female' : 'male'
       const hardcore = this.hero.hardcore ? 'border-danger' : ''
       return `hero-${this.hero.classSlug} ${gender} ${hardcore}`

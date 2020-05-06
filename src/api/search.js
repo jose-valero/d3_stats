@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { get } from 'axios'
 import store from '../store/index'
 import { locales } from '../utils/regions'
@@ -14,7 +13,7 @@ const host = '.api.blizzard.com/'
  * @param account {String}
  * @returns {Promise}
  */
-function getApiAccount({ region, account }) {
+function getApiAccount ({ region, account }) {
   const resource = `d3/profile/${account}/`
   const API_URL = `${protocol}${region}${host}${resource}`
   const locale = locales[region]
@@ -35,7 +34,7 @@ function getApiAccount({ region, account }) {
  * @param heroId {String}
  * @returns {Promise}
  */
-function getApiHero({ region, account, heroId }) {
+function getApiHero ({ region, account, heroId }) {
   const resource = `d3/profile/${account}/hero/${heroId}`
   const API_URL = `${protocol}${region}${host}${resource}`
   const locale = locales[region]
@@ -56,7 +55,7 @@ function getApiHero({ region, account, heroId }) {
  * @param heroId {String}
  * @returns {Promise}
  */
-function getApiDetailedHeroItems({ region, account, heroId }) {
+function getApiDetailedHeroItems ({ region, account, heroId }) {
   const resource = `d3/profile/${account}/hero/${heroId}/items`
   const API_URL = `${protocol}${region}${host}${resource}`
   const locale = locales[region]

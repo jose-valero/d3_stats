@@ -10,7 +10,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import TopHero from './TopHero'
 
 export default {

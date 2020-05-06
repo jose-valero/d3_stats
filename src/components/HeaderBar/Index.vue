@@ -16,7 +16,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { listSeasons } from '@/api/season'
 import BrandTitle from './BrandTitle'
 import BreadcrumbBar from './BreadcrumbBar'
@@ -24,17 +23,17 @@ import BreadcrumbBar from './BreadcrumbBar'
 export default {
   name: 'HeaderBar',
   components: { BreadcrumbBar, BrandTitle },
-  data() {
+  data () {
     return {
       currentSeason: null
     }
   },
-  created() {
+  created () {
     const region = 'eu'
     this.fetchSeasons(region)
   },
   methods: {
-    fetchSeasons(region) {
+    fetchSeasons (region) {
       listSeasons(region)
         .then(({ data }) => {
           this.currentSeason = data.current_season

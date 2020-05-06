@@ -13,7 +13,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { HeroData } from '@/utils/typeValidation'
 
 export default {
@@ -25,7 +24,7 @@ export default {
     }
   },
   computed: {
-    classHeroBg() {
+    classHeroBg () {
       return `hero-bg-color-${this.heroTime.classSlug}`
     }
   }

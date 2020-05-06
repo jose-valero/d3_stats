@@ -25,7 +25,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import goToHero from '@/mixins/goToHero'
 import { formatNumber } from '@/filters/numeral'
 
@@ -40,7 +39,7 @@ export default {
     }
   },
   computed: {
-    heroClass() {
+    heroClass () {
       const gender = this.hero.gender === 0 ? 'male' : 'female'
       return `hero-${this.hero.classSlug} ${gender}`
     }

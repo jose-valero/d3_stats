@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Vue from 'vue'
 // BootstrapVue
 import './plugins/bootstrapVue'
@@ -23,11 +22,11 @@ new Vue({
   router,
   store,
   methods: {
-    init() {
+    init () {
       store.dispatch('oauth/getToken', null, { root: true })
     }
   },
-  created() {
+  created () {
     this.init()
   },
   render: h => h(App)

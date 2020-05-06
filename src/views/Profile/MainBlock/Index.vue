@@ -12,7 +12,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import TopHeroes from './TopHeroes/Index'
 import HeroesList from './HeroesList/Index'
 import ProgressList from './ProgressList/Index'
@@ -33,19 +32,19 @@ export default {
     }
   },
   computed: {
-    hasHeroes() {
+    hasHeroes () {
       return this.profileData.heroes.length > 0
     },
-    topHeroes() {
+    topHeroes () {
       return this.profileData.heroes.slice(0, 3)
     },
-    hasHeroesList() {
+    hasHeroesList () {
       return this.profileData.heroes.length > 3
     },
-    heroesList() {
+    heroesList () {
       return this.profileData.heroes.slice(3, this.profileData.heroes.length)
     },
-    statsData() {
+    statsData () {
       const { paragonLevel, kills, timePlayed } = this.profileData
       return { paragonLevel, kills, timePlayed }
     }

@@ -16,7 +16,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import MadeByFoot from './MadeByFoot'
 import PoweredByFoot from './PoweredByFoot'
 import FootLinks from './FootLinks'
@@ -24,7 +23,7 @@ import FootLinks from './FootLinks'
 export default {
   name: 'FooterBar',
   components: { FootLinks, PoweredByFoot, MadeByFoot },
-  data() {
+  data () {
     return {
       icons: [
         {
@@ -45,7 +44,7 @@ export default {
         {
           classes: ['fab', 'github'],
           color: '#e4e4e4',
-          href: 'https://github.com/baumannzone'
+          href: 'https://github.com/jose-valero'
         },
         {
           classes: ['fab', 'font-awesome'],

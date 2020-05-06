@@ -1,4 +1,3 @@
-/* eslint-disable */
 import Vue from 'vue'
 
 import focus from './focus'

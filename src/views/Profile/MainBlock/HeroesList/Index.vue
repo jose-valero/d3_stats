@@ -17,7 +17,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import HeroIco from './HeroIco'
 import HeroClassLevel from './HeroClassLevel'
 import { formatNumber } from '@/filters/numeral'
@@ -37,7 +36,7 @@ export default {
       type: Array
     }
   },
-  data() {
+  data () {
     return {
       fields: [
         {

@@ -1,4 +1,3 @@
-/* eslint-disable */
 const names = {
   BARBARIAN: 'barbarian',
   CRUSADER: 'crusader',
@@ -36,7 +35,7 @@ export default {
      * @param classSlug {String}
      * @returns {String}
      */
-    resourceClassName(classSlug) {
+    resourceClassName (classSlug) {
       return resourceClassName[classSlug]
     },
     /**
@@ -44,7 +43,7 @@ export default {
      * @param classSlug {String}
      * @returns {String}
      */
-    resourceDisplayName(classSlug) {
+    resourceDisplayName (classSlug) {
       return resourceDisplayName[classSlug]
     }
   }

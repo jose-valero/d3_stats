@@ -3,7 +3,6 @@
     <LoadLayout v-if="isLoading">
       <BaseLoading />
     </LoadLayout>
-
     <MainLayout v-else />
   </div>
 </template>

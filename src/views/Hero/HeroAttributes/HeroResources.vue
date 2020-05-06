@@ -44,7 +44,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import resources from '@/mixins/resources'
 import { formatNumber } from '@/filters/numeral'
 
@@ -61,14 +60,14 @@ export default {
     }
   },
   computed: {
-    classResourceName() {
+    classResourceName () {
       return `resource-${this.resourceClassName(this.resources.classSlug)}`
     },
-    displayResourceName() {
+    displayResourceName () {
       return this.resourceDisplayName(this.resources.classSlug)
     },
     // Solo demon-hunter tiene recurso secundario
-    hasSecondaryResource() {
+    hasSecondaryResource () {
       return this.resources.classSlug === 'demon-hunter'
     }
   }

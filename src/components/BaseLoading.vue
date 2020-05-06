@@ -8,7 +8,7 @@
 </template>
 
 <script>
-/* eslint-disable */
+
 export default {
   name: 'Loading',
   props: {

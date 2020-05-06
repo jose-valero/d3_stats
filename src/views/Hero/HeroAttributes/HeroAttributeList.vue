@@ -13,7 +13,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { formatNumber } from '@/filters/numeral'
 
 export default {

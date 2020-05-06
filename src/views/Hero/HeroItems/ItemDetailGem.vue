@@ -3,7 +3,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'GemSlotItem',
   props: {
@@ -13,7 +12,7 @@ export default {
     }
   },
   computed: {
-    gemUrl() {
+    gemUrl () {
       // Cambio de 'large' por 'small'
       const host = 'http://media.blizzard.com/d3/icons/items/small/'
       return `${host}${this.gem.item.icon}.png`

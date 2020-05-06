@@ -8,7 +8,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 const acts = {
   act1: 'I',
   act2: 'II',
@@ -29,14 +28,14 @@ export default {
     }
   },
   computed: {
-    fullActName() {
+    fullActName () {
       return `Act ${acts[this.act.actNum]}`
     },
-    actClass() {
+    actClass () {
       const status = this.act.value ? 'done' : 'pending'
       return `${this.act.actNum} ${status}`
     },
-    actTitle() {
+    actTitle () {
       return this.act.value ? 'Act completed! 💃' : 'Act uncompleted 🙈'
     }
   }

@@ -39,7 +39,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import heroName from '@/mixins/heroName'
 
 export default {
@@ -52,7 +51,7 @@ export default {
     }
   },
   computed: {
-    heroClass() {
+    heroClass () {
       const gender = this.detail.gender === 0 ? 'male' : 'female'
       return `hero-${this.detail.classSlug} ${gender}`
     }

@@ -29,7 +29,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import HeroAttributeList from './HeroAttributeList'
 import HeroResources from './HeroResources'
 
@@ -53,20 +52,20 @@ export default {
   },
   computed: {
     // Creamos el objeto de atributos principales
-    coreAttributes() {
+    coreAttributes () {
       return coreAttributes.map(item => ({
         name: item,
         val: this.attributes[item]
       }))
     },
     // Creamos el objeto de atributos principales
-    secondaryAttributes() {
+    secondaryAttributes () {
       return secondaryAttributes.map(item => ({
         name: item,
         val: this.attributes[item]
       }))
     },
-    resources() {
+    resources () {
       // Creamos el objeto de recursos
       // Agregamos el tipo de personaje `classSlug` (necesario para los Sprites CSS)
       const data = {

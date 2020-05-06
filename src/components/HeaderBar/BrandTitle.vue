@@ -6,10 +6,10 @@
 </template>
 
 <script>
-/* eslint-disable */
+
 export default {
   name: 'BrandTitle',
-  data() {
+  data () {
     return {
       // 🔥 Note that only variables that start with VUE_APP_ will be statically embedded
       // into the client bundle with webpack.DefinePlugin.

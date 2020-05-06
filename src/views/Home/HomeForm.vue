@@ -44,12 +44,11 @@
 </template>
 
 <script>
-/* eslint-disable */
 import { regions } from '@/utils/regions'
 
 export default {
   name: 'MainForm',
-  data() {
+  data () {
     return {
       form: {
         battleTag: '',
@@ -58,7 +57,7 @@ export default {
     }
   },
   computed: {
-    regions() {
+    regions () {
       return regions.map(region => ({
         value: region,
         text: region.toUpperCase()
@@ -66,7 +65,7 @@ export default {
     }
   },
   methods: {
-    onSubmit() {
+    onSubmit () {
       const { region, battleTag } = this.form
       this.$router.push({
         name: 'Profile',

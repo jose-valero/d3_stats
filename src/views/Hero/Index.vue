@@ -8,7 +8,7 @@
       <!-- En 'lg' orden 2 -->
       <b-col md="12" lg="8" order-lg="2">
         <BaseLoading v-if="isLoadingItems" />
-         <HeroItems v-if="items" :items="items"/>
+        <HeroItems v-if="items" :items="items" />
       </b-col>
 
       <!-- 12 columnas de 'xs' -> 'md', 4 columnas desde 'lg' hacia arriba -->
@@ -24,7 +24,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import setError from '@/mixins/setError'
 import BaseLoading from '@/components/BaseLoading'
 import { getApiHero, getApiDetailedHeroItems } from '@/api/search'
@@ -43,7 +42,7 @@ export default {
     HeroSkills,
     HeroItems
   },
-  data() {
+  data () {
     return {
       isLoadingHero: false,
       isLoadingItems: false,
@@ -52,7 +51,7 @@ export default {
     }
   },
   computed: {
-    detailHeader() {
+    detailHeader () {
       const {
         name,
         class: classSlug,
@@ -77,11 +76,11 @@ export default {
         seasonCreated
       }
     },
-    detailStats() {
+    detailStats () {
       return { ...this.hero.stats, classSlug: this.hero.class }
     }
   },
-  created() {
+  created () {
     this.isLoadingHero = true
     this.isLoadingItems = true
     const { region, battleTag: account, heroId } = this.$route.params
