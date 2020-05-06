@@ -1,6 +1,8 @@
 ## Curso Avanzado de Vue.js en Platzi
 
-####Demo de la APP 🏆: 
+####Demo de la APP 🏆: [Valero-Diablo3](http:// https://valero-diablo3.netlify.app/#/ "Valero-Diablo3")
+#####battleTag: SuperRambo#2613
+#####Region: EU
 
 ###Diablo III Profile finder 👹
 
