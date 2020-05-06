@@ -17,8 +17,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 export default {
   name: 'ActiveSkill',
   props: {
@@ -36,7 +34,7 @@ export default {
     }
   },
   computed: {
-    skillUrl() {
+    skillUrl () {
       // Posibles tamaños (px)
       const sizes = [21, 42, 64]
       // API URL para imágenes
@@ -46,7 +44,7 @@ export default {
       return `${host}${this.skill.icon}.png`
     },
     // Clase CSS para los slots
-    slotClass() {
+    slotClass () {
       return `slot-${this.slotNum}`
     }
   }

@@ -13,7 +13,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 export default {
   name: 'PassiveSkill',
   props: {
@@ -23,7 +22,7 @@ export default {
     }
   },
   computed: {
-    skillUrl() {
+    skillUrl () {
       const sizes = {
         21: 21,
         42: 42,

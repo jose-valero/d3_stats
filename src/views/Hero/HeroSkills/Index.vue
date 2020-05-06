@@ -23,8 +23,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 export default {
   name: 'HeroSkills',
   components: {
@@ -39,25 +37,25 @@ export default {
       type: Object
     }
   },
-  data() {
+  data () {
     return {
       activeComponent: 'ActiveSkills'
     }
   },
   computed: {
     // Si el componente es ActiveSkills pasa como props las activas, si no, las pasivas
-    componentProps() {
+    componentProps () {
       return this.activeComponent === 'ActiveSkills'
         ? this.skills.active
         : this.skills.passive
     },
     // Nos dice si el componente "HabilidadesPasivas" está activo o no
-    isPassiveSkillsActive() {
+    isPassiveSkillsActive () {
       return this.activeComponent === 'PassiveSkills'
     }
   },
   methods: {
-    changeComponent(component) {
+    changeComponent (component) {
       this.activeComponent = component
     }
   }

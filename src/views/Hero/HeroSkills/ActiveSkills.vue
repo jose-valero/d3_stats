@@ -13,7 +13,6 @@
 </template>
 
 <script>
-/* eslint-disable */
 import ActiveSkill from './ActiveSkill'
 
 export default {

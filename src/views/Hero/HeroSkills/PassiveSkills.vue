@@ -12,8 +12,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 import PassiveSkill from './PassiveSkill'
 
 export default {
