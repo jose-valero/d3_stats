@@ -1,7 +1,7 @@
 ## Curso Avanzado de Vue.js en Platzi
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1ec064f9-7925-4c37-befc-6de92051ee91/deploy-status)](https://app.netlify.com/sites/valero-diablo3/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1ec064f9-7925-4c37-befc-6de92051ee91/deploy-status)](https://app.netlify.com/sites/valero-diablo3/deploys)git
 
-#### Demo de la APP 🏆: [Valero-Diablo3](http:// https://valero-diablo3.netlify.app/#/ "Valero-Diablo3")
+#### Demo de la APP 🏆: [Valero-Diablo3](http://valero-diablo3.netlify.app/#/ "Valero-Diablo3")
 ##### battleTag: SuperRambo#2613
 ##### Region: EU
 
