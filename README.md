@@ -4,7 +4,7 @@
 ##### battleTag: SuperRambo#2613
 ##### Region: EU
 
-###-Diablo III Profile finder 👹
+### Diablo III Profile finder 👹
 
 #### Start Up 🚀
 Aplicacion de Vuejs bajo concepto de un buscador perfiles de Diablo 3, esta app nos permite buscar ciertos aspectos y carascteristicas del jugadores, sus top heroes asi como los skills y los items.
