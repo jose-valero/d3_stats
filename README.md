@@ -8,26 +8,27 @@
 ### Diablo III Profile finder 👹
 
 #### Start Up 🚀
-Aplicacion de Vuejs bajo concepto de un buscador perfiles de Diablo 3, esta app nos permite buscar ciertos aspectos y carascteristicas del jugadores, sus top heroes asi como los skills y los items.
+Aplicacion de Vuejs bajo concepto de buscador perfiles de Diablo 3, esta app nos permite buscar ciertos aspectos y carascteristicas de jugadores, sus top heroes asi como los skills y los items.
 
 
 
 #### durante el curso los aspectos mas relevantes fueron 🤯🤯🤯:
 
-- Uso de de Directivas personalizadas
-- Componentes Asincronos y cargados de forma dinamica
-- Optimizacion de las llamadas a la API
-- Uso de Stylus y el mapeo de imagenes
-- Uso de Bootstrap-Vue y FontAwesome como librerias externas
+- Uso de Directivas personalizadas
+- Componentes Asíncronos y cargados de forma dinámica
+- Optimización de las llamadas a la API
+- Uso de Stylus y el mapeo de imágenes
+- Uso de Bootstrap-Vue y FontAwesome como librerías externas
 - Mejorando el uso de: Vuex, Vue Router, Vue DevTools
-- Deploy applicaciones en Netlify
+- Deploy aplicaciones en Netlify
 
-tecnologias usadas⌨️:
+
+Tecnologías Usadas⌨️:
 
  `JavaScript`  `HTML5`  `CSS3`  `Bootstrap-Vue` `Nodejs` `Vuejs` `Netlify`  `FontAwesome`
  
 
-#### Ejemplo de Componentes Asincronos 🧩
+#### Ejemplo de Componentes Asíncronos 🧩
 el uso de /* webpackChunkName: "ActiveSkills */ nos facilita identificar los chucks y aplicamos el concepto de "lazy loading" 😮
 
 ```javascript
@@ -72,7 +73,7 @@ Vue.directive('diablo', diablo) // font v-diablo
           </b-form-group>
 ```
 ---
-#### Nuestra app en el perfil del usuario se ve Asi💥 :
+#### Nuestra app en el perfil del usuario se ve Así💥 :
 
 [![Vista](https://i.imgur.com/T7AwLIq.jpg "Vista")](http://https://i.imgur.com/T7AwLIq.jpg "Vista")
 ---
